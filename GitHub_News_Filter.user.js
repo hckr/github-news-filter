@@ -24,7 +24,7 @@ let patternInput = document.getElementById('pattern-input'),
     forcedMore = false,
     inputTimeout = null;
 
-patternInput.addEventListener('keydown', function() {
+patternInput.addEventListener('input', function() {
     clearTimeout(inputTimeout);
     setTimeout(function() {
         let notHidden = filterNews(news.querySelectorAll('.alert'));
