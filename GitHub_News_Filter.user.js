@@ -14,9 +14,8 @@ let news = document.querySelector('.news'),
 
 news.style.position = 'relative';
 news.insertAdjacentHTML('afterbegin', `
-    <label style="position: absolute; top: 5px; right: 20px; font-weight: normal">
-        News filter: <input id="pattern-input" style="width: 150px; border: none; border-bottom: 1px solid #aaa">
-    </label>
+    <label class="sr-only" for="pattern-input">News filter</label>
+    <input id="pattern-input" class="form-control" style="width: 150px; position: absolute; right: 20px;" placeholder="News filter">
 `);
 
 let patternInput = document.getElementById('pattern-input'),
