@@ -20,7 +20,7 @@ news.insertAdjacentHTML('afterbegin', `
 `);
 
 let patternInput = document.getElementById('pattern-input'),
-    underMinimum = 0;
+    underMinimum = 0,
     forcedMore = false,
     inputTimeout = null;
 
