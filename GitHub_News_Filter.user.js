@@ -20,11 +20,11 @@ news.insertAdjacentHTML('afterbegin', `
 `);
 
 let patternInput = document.getElementById('pattern-input'),
-    underMinimum = 0;
+    underMinimum = 0,
     forcedMore = false,
     inputTimeout = null;
 
-patternInput.addEventListener('keydown', function() {
+patternInput.addEventListener('input', function() {
     clearTimeout(inputTimeout);
     setTimeout(function() {
         let notHidden = filterNews(news.querySelectorAll('.alert'));
