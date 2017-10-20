@@ -3,7 +3,7 @@
 // @namespace   hckr
 // @description Userscript to filter GitHub news feed using case-insensitive regular expression
 // @include     https://github.com/
-// @version     0.2
+// @version     0.3
 // @author      Jakub Młokosiewicz
 // @source      https://github.com/hckr/github-news-filter
 // @license     MIT
@@ -26,7 +26,8 @@ let patternInput = document.getElementById('pattern-input'),
 patternInput.addEventListener('input', function() {
     clearTimeout(inputTimeout);
     setTimeout(function() {
-        let notHidden = filterNews(news.querySelectorAll('.alert'));
+        let notHidden = filterNews([].filter.call(news.querySelectorAll('div'),
+                                                  node => node.querySelector('.body')));
         if (notHidden < minimum) {
             underMinimum = minimum - notHidden;
             forcedMore = true;
@@ -43,7 +44,7 @@ let observer = new MutationObserver(function(mutations) {
             }
             let notHidden = filterNews(
                 [].filter.call(mutation.addedNodes,
-                    node => node.className && node.className.match(/alert/)));
+                               node => node.querySelector && node.querySelector('.body')));
             underMinimum -= notHidden;
             if (notHidden == 0 || underMinimum > 0) {
                 forcedMore = true;
