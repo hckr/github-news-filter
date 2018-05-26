@@ -3,7 +3,7 @@
 // @namespace   hckr
 // @description Userscript to filter GitHub news feed using case-insensitive regular expression
 // @include     https://github.com/
-// @version     0.3
+// @version     0.4
 // @author      Jakub Młokosiewicz
 // @source      https://github.com/hckr/github-news-filter
 // @license     MIT
@@ -15,7 +15,7 @@ let news = document.querySelector('.news'),
 news.style.position = 'relative';
 news.insertAdjacentHTML('afterbegin', `
     <label class="sr-only" for="pattern-input">News filter</label>
-    <input id="pattern-input" class="form-control" style="width: 150px; position: absolute; right: 20px;" placeholder="News filter">
+    <input id="pattern-input" class="form-control" style="width: 150px; position: absolute; top: 10px; right: 20px;" placeholder="News filter">
 `);
 
 let patternInput = document.getElementById('pattern-input'),
