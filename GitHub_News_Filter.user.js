@@ -3,9 +3,12 @@
 // @namespace   hckr
 // @description Userscript to filter GitHub news feed using case-insensitive regular expression
 // @include     https://github.com/
-// @version     0.4
+// @version     0.5
 // @author      Jakub Młokosiewicz
 // @source      https://github.com/hckr/github-news-filter
+// @updateURL   https://hckr.pl/github-news-filter/GitHub_News_Filter.user.js
+// @downloadURL https://hckr.pl/github-news-filter/GitHub_News_Filter.user.js
+// @supportURL  https://github.com/hckr/github-news-filter/issues
 // @license     MIT
 // ==/UserScript==
 
