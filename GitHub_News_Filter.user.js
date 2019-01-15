@@ -3,7 +3,7 @@
 // @namespace   hckr
 // @description Userscript to filter GitHub news feed using case-insensitive regular expression
 // @include     https://github.com/
-// @version     0.6
+// @version     0.6.1
 // @author      Jakub Młokosiewicz
 // @source      https://github.com/hckr/github-news-filter
 // @updateURL   https://hckr.pl/github-news-filter/GitHub_News_Filter.user.js
@@ -23,16 +23,15 @@ let initialObserver = new MutationObserver(function() {
 initialObserver.observe(document.querySelector('.news'), { childList: true });
 
 function initializeFilter() {
-    console.log('aa');
     let activity = document.querySelector('.js-all-activity-header + div'),
         activityWrapper = document.createElement('div');
     activityWrapper.style.position = 'relative';
     activityWrapper.innerHTML = `
         <label class="sr-only" for="pattern-input">News filter</label>
-        <input id="pattern-input" class="form-control" style="width: 150px; position: absolute; top: -30px; right: 0px;" placeholder="Filter activity...">
+        <input id="pattern-input" class="form-control" style="width: 150px; position: absolute; top: -10px; right: 0px;" placeholder="Filter activity...">
     `;
 
-        activity.parentNode.insertBefore(activityWrapper, activity);
+    activity.parentNode.insertBefore(activityWrapper, activity);
     activityWrapper.appendChild(activity);
 
     let patternInput = document.getElementById('pattern-input'),
