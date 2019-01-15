@@ -1,4 +1,6 @@
-Userscript to filter GitHub news feed using case-insensitive regular expression
+Userscript to filter GitHub news feed using case-insensitive regular expression.
+
+[Scroll to install section](#prerequisites).
 
 
 ## How to use
@@ -20,8 +22,6 @@ Click on the link above to install the userscript.
 
 #### Wishes / Issues / Enjoyment?
 
-<a class="github-button" href="https://github.com/hckr/github-news-filter" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star hckr/github-news-filter on GitHub">Star</a>
-
-<a class="github-button" href="https://github.com/hckr/github-news-filter/issues" data-icon="octicon-issue-opened" data-size="large" data-show-count="true" aria-label="Issue hckr/github-news-filter on GitHub">Issue / Wish</a>
+<a class="github-button" href="https://github.com/hckr/github-news-filter" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star hckr/github-news-filter on GitHub">Star</a> <a class="github-button" href="https://github.com/hckr/github-news-filter/issues" data-icon="octicon-issue-opened" data-size="large" data-show-count="true" aria-label="Issue hckr/github-news-filter on GitHub">Issue/Wish</a> <a class="github-button" href="https://github.com/hckr/github-news-filter/fork" data-icon="octicon-repo-forked" data-size="large" data-show-count="true" aria-label="Fork hckr/github-news-filter on GitHub">Fork</a>
 
 <script src="https://buttons.github.io/buttons.js"></script>
