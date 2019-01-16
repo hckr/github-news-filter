@@ -2,6 +2,8 @@ Userscript to filter GitHub news feed using case-insensitive regular expression.
 
 [Scroll to install section](#prerequisites).
 
+[Source code](https://github.com/hckr/github-news-filter) is available on GitHub.
+
 
 ## How to use
 
