@@ -2,4 +2,8 @@ lang: en
 title: GitHub News Filter UserScript
 url: https://hckr.pl
 baseurl: /github-news-filter
-og_image: https://raw.githubusercontent.com/hckr/github-news-filter/master/demo.gif
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: https://raw.githubusercontent.com/hckr/github-news-filter/master/demo.gif
