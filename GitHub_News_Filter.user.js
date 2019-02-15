@@ -6,7 +6,7 @@
 // @include     https://github.com/?*
 // @include     https://github.com/orgs/*/dashboard
 // @include     https://github.com/orgs/*/dashboard?*
-// @version     0.6.3
+// @version     0.6.4
 // @author      Jakub Młokosiewicz
 // @source      https://github.com/hckr/github-news-filter
 // @updateURL   https://hckr.pl/github-news-filter/GitHub_News_Filter.user.js
@@ -32,7 +32,7 @@ function initializeFilter() {
     activityWrapper.style.position = 'relative';
     activityWrapper.innerHTML = `
         <label class="sr-only" for="pattern-input">News filter</label>
-        <input id="pattern-input" class="form-control" style="width: 150px; position: absolute; top: -28px; right: 0px;" placeholder="Filter activity...">
+        <input id="pattern-input" class="form-control" style="width: 150px; position: absolute; top: -14px; right: 0px;" placeholder="Filter activity...">
     `;
 
     activity.parentNode.insertBefore(activityWrapper, activity);
